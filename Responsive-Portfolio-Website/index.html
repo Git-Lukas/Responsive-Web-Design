@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- REMIX ICON LIBRARY -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Responsive Mini Portolio</title>
+</head>
+<body>
+    <header class="profile container">
+        <div class="profile-data">
+            
+            <div class="profile-img">
+                <img src="/images/profile-img-2.jpg" alt="profile image">
+            </div>    
+
+            
+            <h2 class="profile-name">Lucas Todarello</h2>
+            <h3 class="profile-profession">Self-Taught Developer</h3>
+            
+            <nav class="profile-social">
+                <ul>
+                    <a href="/" class="profile-social-link" target="_blank">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/Git-Lukas" class="profile-social-link" target="_blank">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </nav>
+
+                <!-- <div class="profile-contact"></div> -->
+            <a href="/" class="profile-contact-link" target="_blank">
+                <span class="profile-contact-text">Let's Contact</span>
+                <i class="ri-mail-line"></i>
+            </a>
+
+        </div>
+    </header>
+    <main class="main">
+        <section class="filter container">
+            <ul class="filter-section">
+                <button class="filter-button tab-filter-active" data-id="projects" data-target="#projects">
+                    Projects
+                </button>
+                <button class="filter-button" data-id="skills" data-target="#skills">
+                    Skills
+                </button>
+            </ul>
+
+            <div class="filter-content">
+                <div class="projects-content filter-active" id="projects" data-content>
+                    <div class="project">
+                        <img src="images/shopping-cart-capture.jpeg" alt="" class="projects-img">
+                        <div class="project-card">
+                            <p class="project-desc">JS Project</p>
+                            <h2 class="project-title">Shopping Cart</h2>
+                            <a href="http://greengrocers.netlify.app" target="_blank" class="project-link">
+                                <i class="ri-links-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="images/survey-form-capture.jpeg" alt="" class="projects-img">
+                        <div class="project-card">
+                            <p class="project-desc">Web Design</p>
+                            <h2 class="project-title">Survey Form</h2>
+                            <a href="http://freecodecamp-users-survey-form.netlify.app" target="_blank" class="project-link">
+                                <i class="ri-links-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="images/color-picker-capture.jpeg" alt="" class="projects-img">
+                        <div class="project-card">
+                            <p class="project-desc">JS Project</p>
+                            <h2 class="project-title">Color picker</h2>
+                            <a href="http://color-picker-tool.netlify.app" target="_blank" class="project-link">
+                                <i class="ri-links-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="images/tribute-page-capture.jpeg" alt="" class="projects-img">
+                        <div class="project-card">
+                            <p class="project-desc">Web Design</p>
+                            <h2 class="project-title">Tribute Page</h2>
+                            <a href="http://dr-norman-borlaug.netlify.app" target="_blank" class="project-link">
+                                <i class="ri-links-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-content" id="skills" data-content >
+                    <h3 class="skills-title">Frontend Developer</h3>
+
+                    <div class="skills-group">
+                        <div class="skills-data">
+                            <i class="ri-checkbox-circle-line"></i>
+                            <div>
+                                <h3 class="skills-name">HTML</h3>
+                                <span class="skills-level">Basic</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <i class="ri-checkbox-circle-line"></i>
+                            <div>
+                                <h3 class="skills-name">CSS</h3>
+                                <span class="skills-level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <i class="ri-checkbox-circle-line"></i>
+                            <div>
+                                <h3 class="skills-name">JavaScript</h3>
+                                <span class="skills-level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span class="footer">
+            <i class="ri-copyright-line"></i>
+            Lucas Todarello. All rights reserved
+        </span>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
